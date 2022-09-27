@@ -1,5 +1,5 @@
-word = ['h','o','g','w','a','r','t','s','a']
-guess=['_','_','_','_','_','_','_','_','_']
+word = ['h','o','g','w','a','r','t','s']
+guess=['_','_','_','_','_','_','_','_']
 chances = 12
 b = False
 while (chances > 0 and b == False):
@@ -10,6 +10,7 @@ while (chances > 0 and b == False):
         print("Wrong guess")
         chances -= 1
     else:
+        n = len(word)
         for i in range(n):
             if (word[i] == x):
                 guess[i] = x
